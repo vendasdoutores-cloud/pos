@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patrícia Nascimento Silva — Vendas</title>
+    <meta
+      name="description"
+      content="Currículo profissional de Patrícia Nascimento Silva, closer e profissional de vendas."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script>
+      document.documentElement.dataset.theme = localStorage.getItem("theme") || "dark";
+    </script>
+  </head>
+  <body>
+    <div class="mesh" aria-hidden="true"></div>
+
+    <header class="topbar" id="nav">
+      <div class="topbar__inner">
+        <a class="topbar__brand" href="#inicio">
+          <img src="assets/foto.png" alt="" width="40" height="40" />
+          <span>Patrícia Silva</span>
+        </a>
+        <nav class="nav-links" id="navLinks">
+          <a href="#inicio">Início</a>
+          <a href="#experiencia">Experiência</a>
+          <a href="#formacao">Formação</a>
+          <a href="#cursos">Cursos</a>
+          <a href="#contato">Contato</a>
+        </nav>
+        <div class="topbar__actions">
+          <button class="icon-btn" id="printBtn" type="button" aria-label="Baixar PDF">
+            <span class="material-symbols-outlined" aria-hidden="true">download</span>
+          </button>
+          <button class="icon-btn" id="themeToggle" type="button" aria-label="Ativar modo claro">
+            <span class="material-symbols-outlined theme-icon theme-icon--moon" aria-hidden="true">dark_mode</span>
+            <span class="material-symbols-outlined theme-icon theme-icon--sun" aria-hidden="true">light_mode</span>
+          </button>
+          <button class="icon-btn nav-toggle" id="navToggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+            <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="container hero__inner">
+          <div class="hero__photo reveal">
+            <img src="assets/foto.png" alt="Foto de Patrícia Nascimento Silva" />
+          </div>
+          <div class="hero__copy">
+            <p class="label reveal">Closer · High Ticket</p>
+            <h1 class="reveal">Patrícia Nascimento Silva</h1>
+            <p class="hero__role reveal">Closer e Vendas</p>
+            <p class="hero__quote reveal" id="tagline">
+              Movida por desafios, guiada por estratégia e reconhecida pelos resultados.
+            </p>
+            <div class="hero__cta reveal">
+              <a class="btn btn--primary" href="#contato">
+                <span class="material-symbols-outlined" aria-hidden="true">handshake</span>
+                Fale comigo
+              </a>
+              <a class="btn btn--ghost" href="#experiencia">
+                <span class="material-symbols-outlined" aria-hidden="true">south</span>
+                Ver trajetória
+              </a>
+              <button class="btn btn--ghost" id="printBtnSecondary" type="button">
+                <span class="material-symbols-outlined" aria-hidden="true">download</span>
+                Baixar PDF
+              </button>
+            </div>
+          </div>
+        </div>
+        <a class="scroll-hint" href="#destaques" aria-label="Rolar para o conteúdo">
+          <span>Explorar</span>
+          <span class="material-symbols-outlined" aria-hidden="true">expand_more</span>
+        </a>
+      </section>
+
+      <section class="strip" id="destaques">
+        <div class="container">
+          <h2 class="section-title">
+            <span class="material-symbols-outlined" aria-hidden="true">terminal</span>
+            Competências
+          </h2>
+          <ul class="skills">
+            <li class="skill skill--glow">High Ticket</li>
+            <li class="skill skill--glow">Closer</li>
+            <li class="skill">Persuasão</li>
+            <li class="skill">Escuta ativa</li>
+            <li class="skill">Funil comercial</li>
+            <li class="skill">Relacionamento</li>
+            <li class="skill skill--teal">Social Media</li>
+            <li class="skill">Pacote Office</li>
+            <li class="skill skill--teal">IA aplicada</li>
+            <li class="skill">Atendimento</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="experiencia">
+        <div class="container">
+          <header class="section__head">
+            <p class="label">01 — Carreira</p>
+            <h2 class="section-title">
+              <span class="material-symbols-outlined" aria-hidden="true">work</span>
+              Experiência profissional
+            </h2>
+            <p class="section__lead">Do varejo à venda high ticket: atendimento, gestão e fechamento.</p>
+          </header>
+
+          <div class="timeline">
+            <article class="job reveal">
+              <span class="timeline__node timeline__node--active" aria-hidden="true"></span>
+              <div class="job__card glass">
+                <p class="label label--teal">Destaque</p>
+                <h3>Closer High Ticket</h3>
+                <p class="job__company">
+                  <span class="material-symbols-outlined" aria-hidden="true">domain</span>
+                  IGD Digital · Érico Rocha
+                </p>
+                <ul>
+                  <li>Fechamento de vendas high ticket, conduzindo leads qualificados até a decisão de compra.</li>
+                  <li>Aplicação de técnicas de persuasão, escuta ativa e condução estratégica da conversa.</li>
+                </ul>
+                <div class="job__tags">
+                  <span class="skill">High Ticket</span>
+                  <span class="skill">Persuasão</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="job reveal">
+              <span class="timeline__node" aria-hidden="true"></span>
+              <div class="job__card glass">
+                <h3>Closer High Ticket</h3>
+                <p class="job__company">
+                  <span class="material-symbols-outlined" aria-hidden="true">domain</span>
+                  Doutores do Excel
+                </p>
+                <ul>
+                  <li>Atuação comercial no modelo closer, com foco em conversão de oportunidades de alto valor.</li>
+                  <li>Acompanhamento do funil e relacionamento com o cliente até o fechamento.</li>
+                </ul>
+                <div class="job__tags">
+                  <span class="skill">Closer</span>
+                  <span class="skill">Funil comercial</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="job reveal">
+              <span class="timeline__node" aria-hidden="true"></span>
+              <div class="job__card glass">
+                <h3>Vendas</h3>
+                <p class="job__company">
+                  <span class="material-symbols-outlined" aria-hidden="true">domain</span>
+                  Casa do Construtor · 1 ano
+                </p>
+                <ul>
+                  <li>Atendimento e vendas em loja, com foco em conversão e relacionamento com o cliente.</li>
+                </ul>
+                <div class="job__tags">
+                  <span class="skill">Vendas</span>
+                  <span class="skill">Atendimento</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="job reveal">
+              <span class="timeline__node" aria-hidden="true"></span>
+              <div class="job__card glass">
+                <h3>Administração, vendas e marketing</h3>
+                <p class="job__company">
+                  <span class="material-symbols-outlined" aria-hidden="true">domain</span>
+                  Loja própria · Moda feminina
+                </p>
+                <ul>
+                  <li>Gestão da operação da loja própria, unindo administração, vendas e marketing.</li>
+                </ul>
+                <div class="job__tags">
+                  <span class="skill">Gestão</span>
+                  <span class="skill">Marketing</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="job reveal">
+              <span class="timeline__node" aria-hidden="true"></span>
+              <div class="job__card glass">
+                <h3>Administrativo e caixa</h3>
+                <p class="job__company">
+                  <span class="material-symbols-outlined" aria-hidden="true">domain</span>
+                  Supermercado próprio
+                </p>
+                <ul>
+                  <li>Rotina administrativa e operação de caixa, com atendimento ao cliente e controle do dia a dia.</li>
+                </ul>
+                <div class="job__tags">
+                  <span class="skill">Administrativo</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="formacao">
+        <div class="container">
+          <header class="section__head">
+            <p class="label">02 — Base</p>
+            <h2 class="section-title">
+              <span class="material-symbols-outlined" aria-hidden="true">school</span>
+              Formação
+            </h2>
+          </header>
+          <div class="edu-grid">
+            <article class="edu glass reveal">
+              <p class="label">Técnico · 4 anos</p>
+              <h3>Ensino Médio Técnico em Administração</h3>
+              <p>Formação técnica completa, com base em gestão, rotinas administrativas e organização comercial.</p>
+            </article>
+            <article class="edu glass reveal">
+              <p class="label">Graduação</p>
+              <h3>Bacharelado em Educação Física</h3>
+              <p>Incompleto · Graduação iniciada, com desenvolvimento em disciplina, trabalho em equipe e cuidado com pessoas.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="cursos">
+        <div class="container">
+          <header class="section__head">
+            <p class="label">03 — Qualificação</p>
+            <h2 class="section-title">
+              <span class="material-symbols-outlined" aria-hidden="true">workspace_premium</span>
+              Cursos e certificações
+            </h2>
+          </header>
+          <ul class="courses">
+            <li class="course glass reveal">
+              <span class="material-symbols-outlined" aria-hidden="true">handshake</span>
+              <div>
+                <strong>Closer de vendas</strong>
+                <span>Método DEF, gatilhos mentais e técnicas de vendas.</span>
+              </div>
+            </li>
+            <li class="course glass reveal">
+              <span class="material-symbols-outlined" aria-hidden="true">share</span>
+              <div>
+                <strong>Especialização em Mídias Sociais</strong>
+                <span>Social Media com certificação reconhecida pelo MEC.</span>
+              </div>
+            </li>
+            <li class="course glass reveal">
+              <span class="material-symbols-outlined" aria-hidden="true">table_chart</span>
+              <div>
+                <strong>Pacote Office</strong>
+                <span>Word, Excel e PowerPoint.</span>
+              </div>
+            </li>
+            <li class="course glass reveal">
+              <span class="material-symbols-outlined" aria-hidden="true">smart_toy</span>
+              <div>
+                <strong>Estratégia e Desenvolvimento de Soluções com IA</strong>
+                <span>Curso de extensão em inteligência artificial aplicada.</span>
+              </div>
+            </li>
+            <li class="course glass reveal course--wide">
+              <span class="material-symbols-outlined" aria-hidden="true">badge</span>
+              <div>
+                <strong>Cursos profissionalizantes — INFOP</strong>
+                <span>Atendimento, Recepção, Promotor de vendas, Telemarketing, Auxiliar administrativo, Operador de caixa e Conhecimentos bancários.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section section--cta" id="contato">
+        <div class="container">
+          <header class="section__head">
+            <p class="label">04 — Próximo passo</p>
+            <h2 class="section-title">
+              <span class="material-symbols-outlined" aria-hidden="true">alternate_email</span>
+              Vamos conversar
+            </h2>
+            <p class="section__lead">Aberta a oportunidades em vendas, closer e alta performance comercial.</p>
+          </header>
+          <ul class="contact">
+            <li class="reveal">
+              <a class="contact__card glass" href="mailto:santannapaty4@gmail.com">
+                <span class="material-symbols-outlined" aria-hidden="true">mail</span>
+                <span>
+                  <strong>E-mail</strong>
+                  <em>santannapaty4@gmail.com</em>
+                </span>
+              </a>
+            </li>
+            <li class="reveal">
+              <a
+                class="contact__card glass"
+                href="https://www.linkedin.com/in/patriciasantannasm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="material-symbols-outlined" aria-hidden="true">share</span>
+                <span>
+                  <strong>LinkedIn</strong>
+                  <em>patriciasantannasm</em>
+                </span>
+              </a>
+            </li>
+            <li class="reveal">
+              <div class="contact__card glass">
+                <span class="material-symbols-outlined" aria-hidden="true">location_on</span>
+                <span>
+                  <strong>Localização</strong>
+                  <em>Brasil</em>
+                </span>
+              </div>
+            </li>
+          </ul>
+          <div class="cta-row">
+            <a class="btn btn--primary" href="mailto:santannapaty4@gmail.com">
+              <span class="material-symbols-outlined" aria-hidden="true">send</span>
+              Enviar e-mail
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p>Patrícia Nascimento Silva · Closer e Vendas</p>
+        <p>© <span id="year"></span></p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

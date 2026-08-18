@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portfólio Técnico - Alex Rivera</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-secondary": "#002e6a",
+                      "on-tertiary-fixed-variant": "#005048",
+                      "tertiary-fixed": "#71f8e4",
+                      "on-tertiary-container": "#009182",
+                      "surface-dim": "#051424",
+                      "surface-tint": "#bec6e0",
+                      "tertiary": "#4fdbc8",
+                      "on-surface-variant": "#c6c6cd",
+                      "tertiary-fixed-dim": "#4fdbc8",
+                      "surface-container-low": "#0d1c2d",
+                      "on-primary-container": "#798098",
+                      "primary": "#bec6e0",
+                      "surface-container-highest": "#273647",
+                      "secondary-fixed-dim": "#adc6ff",
+                      "surface": "#051424",
+                      "on-background": "#d4e4fa",
+                      "on-tertiary": "#003731",
+                      "outline": "#909097",
+                      "primary-fixed": "#dae2fd",
+                      "on-error-container": "#ffdad6",
+                      "on-tertiary-fixed": "#00201c",
+                      "on-secondary-fixed-variant": "#004395",
+                      "on-primary-fixed-variant": "#3f465c",
+                      "surface-variant": "#273647",
+                      "secondary-container": "#0566d9",
+                      "outline-variant": "#45464d",
+                      "background": "#051424",
+                      "primary-container": "#0f172a",
+                      "surface-container-high": "#1c2b3c",
+                      "surface-container": "#122131",
+                      "tertiary-container": "#001c18",
+                      "primary-fixed-dim": "#bec6e0",
+                      "secondary": "#adc6ff",
+                      "on-error": "#690005",
+                      "on-secondary-fixed": "#001a42",
+                      "surface-bright": "#2c3a4c",
+                      "on-primary": "#283044",
+                      "inverse-on-surface": "#233143",
+                      "on-secondary-container": "#e6ecff",
+                      "inverse-primary": "#565e74",
+                      "on-primary-fixed": "#131b2e",
+                      "error": "#ffb4ab",
+                      "on-surface": "#d4e4fa",
+                      "inverse-surface": "#d4e4fa",
+                      "error-container": "#93000a",
+                      "surface-container-lowest": "#010f1f",
+                      "secondary-fixed": "#d8e2ff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "stack-lg": "32px",
+                      "gutter": "24px",
+                      "container-max": "1120px",
+                      "margin-mobile": "20px",
+                      "section-gap": "64px",
+                      "stack-md": "16px",
+                      "stack-sm": "8px"
+              },
+              "fontFamily": {
+                      "display-lg": [
+                              "Inter"
+                      ],
+                      "code": [
+                              "JetBrains Mono"
+                      ],
+                      "label-caps": [
+                              "JetBrains Mono"
+                      ],
+                      "body-sm": [
+                              "Inter"
+                      ],
+                      "headline-lg": [
+                              "Inter"
+                      ],
+                      "headline-lg-mobile": [
+                              "Inter"
+                      ],
+                      "headline-md": [
+                              "Inter"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "800"
+                              }
+                      ],
+                      "code": [
+                              "13px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "1",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-sm": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.5",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-md": [
+                              "20px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "letterSpacing": "0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        .glass-panel {
+            background-color: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .skill-glow {
+            box-shadow: 0 4px 20px rgba(173, 198, 255, 0.2);
+        }
+        .mesh-bg {
+            background-image: 
+                radial-gradient(at 40% 20%, rgba(5, 102, 217, 0.3) 0px, transparent 50%),
+                radial-gradient(at 80% 0%, rgba(79, 219, 200, 0.3) 0px, transparent 50%),
+                radial-gradient(at 0% 50%, rgba(15, 23, 42, 0.8) 0px, transparent 50%);
+        }
+        .timeline-line {
+            position: absolute;
+            left: 24px;
+            top: 24px;
+            bottom: 0;
+            width: 2px;
+            background-color: rgba(255, 255, 255, 0.2);
+            z-index: 0;
+        }
+        .timeline-node {
+            position: absolute;
+            left: -4px;
+            top: 4px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #4fdbc8;
+            box-shadow: 0 0 10px #4fdbc8;
+            z-index: 10;
+        }
+        .timeline-node-inactive {
+             position: absolute;
+            left: -4px;
+            top: 4px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #909097;
+            z-index: 10;
+        }
+        /* Hide scrollbar for horizontal scrolling */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen pb-24 font-body-sm text-body-sm relative">
+<!-- TopAppBar -->
+<header class="bg-surface/80 dark:bg-surface/80 backdrop-blur-xl text-primary dark:text-primary docked full-width top-0 sticky z-50 border-b border-white/10 shadow-sm flex justify-between items-center w-full px-margin-mobile md:px-gutter max-w-container-max mx-auto py-4">
+<div class="flex items-center gap-3">
+<img class="w-10 h-10 rounded-full object-cover border border-white/20" data-alt="A highly detailed professional headshot of an IT candidate, Alex Rivera, presented in a small circular avatar format. He wears a modern, dark minimalist blazer. The lighting is crisp and even, highlighting a confident, high-tech energy. The background is a subtle dark slate. Designed to fit perfectly within a premium, technical user interface top navigation bar." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9bt0P0H1cfYyJyhaedhzWxePZTcrK02T-yDbbLP1xlto1mxSzI8olLR24pClja4He8LpkH6Akr_QZQJiMunU90gwO4bSHQSG_rsrJbZyi3HFxkZCPa6Bmr3sk4wXzl9i1sU8aY_MNzPgI9gt9tqRP7lY5biPKSSU3rGVKxAwZnZ6NgT5qPkzdbs5iTuaKqf01D_GVV1EqI7G4nTx0vcL3KxhZkKXHEzqYRCx-dbtQsapowQoO6nYFNg"/>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg font-extrabold text-on-surface dark:text-on-surface tracking-tighter text-xl">TECHNICAL PORTFOLIO</h1>
+</div>
+<span class="material-symbols-outlined text-primary cursor-pointer hover:text-secondary transition-colors duration-300" style="font-variation-settings: 'FILL' 0;">description</span>
+</header>
+<main class="w-full max-w-container-max mx-auto px-margin-mobile md:px-gutter mt-stack-lg flex flex-col gap-section-gap">
+<!-- Hero Section -->
+<section class="glass-panel rounded-xl p-6 relative overflow-hidden mesh-bg flex flex-col items-center text-center">
+<div class="w-24 h-24 rounded-full p-1 bg-gradient-to-tr from-secondary to-tertiary mb-4">
+<img class="w-full h-full rounded-full object-cover" data-alt="A striking, high-fidelity portrait of Alex Rivera, a Senior Full-Stack Engineer. He is viewed from the chest up, exuding calculated confidence. The lighting features a strong cinematic rim light in electric teal and deep blue, matching a minimalist, high-contrast 'Technical Premium' aesthetic. He wears a dark, modern t-shirt. The background is a smooth, atmospheric deep slate with a subtle mesh gradient effect, conveying architectural order." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcBsoToBd56m2XGq3d2awefoRt_O5QbRsJ1xoctkM0FoIe4YqR1KU8716GVfwMxxKuCexXIZAOj_LUfzGChHlJUWHIZT0wtiEG88WuibH1L-FEZTtVtgFcM20Sy8S05XziJFFuGLRSrdkkqwIurlyjyBLUkHub2jYCkqEYZvwT96FVRoVuQWkCE7djTvR00Y9RHKp4NcT25bvS1sX6ZO_u40h-mzMuetZrsIexpBCb_TrY8tngtEblSw"/>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-surface mb-2">Alex Rivera</h2>
+<p class="font-body-lg text-body-lg text-secondary mb-6 max-w-[280px]">Senior Full-Stack Engineer &amp; Cloud Architect</p>
+<div class="flex gap-4 w-full md:w-auto">
+<button class="flex-1 md:flex-none bg-primary text-on-primary font-label-caps text-label-caps py-3 px-6 rounded-lg font-bold flex items-center justify-center gap-2 hover:bg-white transition-colors duration-300 active:scale-95">
+<span class="material-symbols-outlined text-[18px]">download</span>
+                    Baixar PDF
+                </button>
+<button class="flex-1 md:flex-none glass-panel text-on-surface font-label-caps text-label-caps py-3 px-6 rounded-lg font-bold flex items-center justify-center gap-2 hover:bg-white/10 transition-colors duration-300 active:scale-95">
+<span class="material-symbols-outlined text-[18px]">handshake</span>
+                    Contrate-me
+                </button>
+</div>
+</section>
+<!-- Experience Section -->
+<section>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-stack-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">work</span>
+                Experiência
+            </h3>
+<div class="relative pl-10">
+<div class="timeline-line"></div>
+<!-- Role 1 -->
+<div class="relative mb-stack-lg last:mb-0">
+<div class="timeline-node"></div>
+<div class="glass-panel rounded-xl p-6 hover:border-tertiary/50 transition-colors duration-300 group">
+<div class="flex flex-col mb-4">
+<span class="font-label-caps text-label-caps text-tertiary mb-1">2020 - Presente</span>
+<h4 class="font-headline-md text-headline-md text-on-surface mb-1">Lead Developer</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">domain</span> TechFlow
+                            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">Escalando microsserviços e liderando uma equipe de 10 engenheiros focados em alta disponibilidade e performance.</p>
+<div class="flex flex-wrap gap-2">
+<span class="bg-secondary/10 border border-white/10 text-secondary font-label-caps text-label-caps px-3 py-1 rounded-full">Microservices</span>
+<span class="bg-secondary/10 border border-white/10 text-secondary font-label-caps text-label-caps px-3 py-1 rounded-full">Leadership</span>
+</div>
+</div>
+</div>
+<!-- Role 2 -->
+<div class="relative">
+<div class="timeline-node-inactive"></div>
+<div class="glass-panel rounded-xl p-6 hover:border-secondary/50 transition-colors duration-300 group">
+<div class="flex flex-col mb-4">
+<span class="font-label-caps text-label-caps text-on-surface-variant mb-1">2017 - 2020</span>
+<h4 class="font-headline-md text-headline-md text-on-surface mb-1">Senior Engineer</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">domain</span> CloudScale
+                            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">Implementação de Kubernetes e estratégias agressivas de otimização de custos na AWS para infraestrutura em larga escala.</p>
+<div class="flex flex-wrap gap-2">
+<span class="bg-secondary/10 border border-white/10 text-secondary font-label-caps text-label-caps px-3 py-1 rounded-full">Kubernetes</span>
+<span class="bg-secondary/10 border border-white/10 text-secondary font-label-caps text-label-caps px-3 py-1 rounded-full">AWS</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Skills Section -->
+<section>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-stack-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">terminal</span>
+                Habilidades
+            </h3>
+<div class="flex flex-wrap gap-3">
+<!-- Frontend -->
+<div class="flex items-center gap-2 glass-panel rounded-full px-4 py-2 border-secondary/30 skill-glow">
+<span class="material-symbols-outlined text-secondary text-[18px]">javascript</span>
+<span class="font-label-caps text-label-caps text-secondary">React</span>
+</div>
+<div class="flex items-center gap-2 glass-panel rounded-full px-4 py-2">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">code_blocks</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">TypeScript</span>
+</div>
+<!-- Backend -->
+<div class="flex items-center gap-2 glass-panel rounded-full px-4 py-2">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">data_object</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Node.js</span>
+</div>
+<div class="flex items-center gap-2 glass-panel rounded-full px-4 py-2 border-tertiary/30 shadow-[0_4px_20px_rgba(79,219,200,0.15)]">
+<span class="material-symbols-outlined text-tertiary text-[18px]">api</span>
+<span class="font-label-caps text-label-caps text-tertiary">GraphQL</span>
+</div>
+<!-- Cloud & DevOps -->
+<div class="flex items-center gap-2 glass-panel rounded-full px-4 py-2">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">cloud</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">AWS</span>
+</div>
+<div class="flex items-center gap-2 glass-panel rounded-full px-4 py-2">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">directions_boat</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Docker</span>
+</div>
+<div class="flex items-center gap-2 glass-panel rounded-full px-4 py-2">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">hub</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Kubernetes</span>
+</div>
+</div>
+</section>
+<!-- Projects Section -->
+<section>
+<div class="flex justify-between items-center mb-stack-lg">
+<h3 class="font-headline-md text-headline-md text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">code</span>
+                    Projetos
+                </h3>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">arrow_forward</span>
+</div>
+<div class="flex overflow-x-auto hide-scrollbar gap-4 pb-4 -mx-margin-mobile px-margin-mobile md:mx-0 md:px-0">
+<!-- Project Card 1 -->
+<div class="min-w-[280px] md:min-w-[320px] glass-panel rounded-xl p-5 flex flex-col justify-between group hover:border-white/20 transition-all duration-300">
+<div>
+<div class="w-full h-32 rounded-lg mb-4 bg-surface-container overflow-hidden">
+<div class="w-full h-full bg-cover bg-center opacity-80 group-hover:opacity-100 transition-opacity duration-300" data-alt="A highly detailed, abstract digital representation of a distributed networking tool called 'OpenSource Mesh'. Visuals feature a complex, glowing web of interconnected nodes in bright cyan and neon blue against a deep slate void, representing high-tech data transfer and connectivity. The style is sleek, kinetic, and minimal, fitting a premium dark mode IT portfolio interface." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDyVVv535iXpXjaMfn_mkQNqRUJh93sQ_BER8XUN2sBCJo5dprt_LWKmxRS-XS987lqF5I6G1XStQThPkR7yvTOBK-KTcaktftj-6z7ZtplQaMkJNJwTvlPPdokQEHoGTq1bF5GMEzh5ZII7t5mahR52Y9XcjwsixZXXatWV5mFLP92lHTx9IRSqFveEJBfobkI2xLx0aXCrnDeT1QF-RIW1j6x6E-MO5OsMnX0SQsNI7zTs6RwW17sFw')"></div>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface mb-2">OpenSource Mesh</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4 line-clamp-2">Uma ferramenta de rede distribuída projetada para simplificar a comunicação entre microsserviços.</p>
+</div>
+<div class="flex justify-between items-center mt-auto">
+<span class="font-code text-code text-tertiary">Rust / Go</span>
+<a class="material-symbols-outlined text-secondary hover:text-white transition-colors duration-300" href="#">open_in_new</a>
+</div>
+</div>
+<!-- Project Card 2 -->
+<div class="min-w-[280px] md:min-w-[320px] glass-panel rounded-xl p-5 flex flex-col justify-between group hover:border-white/20 transition-all duration-300">
+<div>
+<div class="w-full h-32 rounded-lg mb-4 bg-surface-container overflow-hidden">
+<div class="w-full h-full bg-cover bg-center opacity-80 group-hover:opacity-100 transition-opacity duration-300" data-alt="A crisp, high-end visualization of a 'FinTech Dashboard' UI for real-time digital asset analytics. The scene shows glowing, abstract financial charts, candlesticks, and data streams in electric green and sharp white, overlaid on a very dark, moody background. The aesthetic is extremely modern, glassmorphic, and conveys secure, high-speed financial technology." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCuquMfNa3nhL2dUq5UEfuk0UuqstorA-Zv5uURp8Ai-2CZoKlJclsPc_XKW4cqLUHSU80QC7J7DXzKyrMboIty9ap9C-gnEtsgafwWvlX8g6udeMgmyi9qUvKi_5WwPXGASf3d4nZ2TP3-xaxyvQqh626VJ_7jz4k-mIX5axN7Rx_P3w2gBfpkeV7_77QAIYpJ8hm-cwTPmeBbcztjLrHqDPYMQld5EYUcBzv1jubD1xi1Fash8gvcCA')"></div>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface mb-2">FinTech Dashboard</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4 line-clamp-2">Plataforma de análise em tempo real para ativos digitais com processamento de alto volume.</p>
+</div>
+<div class="flex justify-between items-center mt-auto">
+<span class="font-code text-code text-tertiary">React / Node</span>
+<a class="material-symbols-outlined text-secondary hover:text-white transition-colors duration-300" href="#">open_in_new</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="bg-surface-container/90 dark:bg-surface-container/90 backdrop-blur-md fixed bottom-0 left-0 w-full z-50 rounded-t-xl border-t border-white/5 shadow-[0_-4px_20px_rgba(0,0,0,0.3)] flex justify-around items-center px-4 py-3 md:hidden">
+<button class="flex flex-col items-center justify-center bg-secondary/10 text-secondary rounded-xl p-2 shadow-[0_0_15px_rgba(173,198,255,0.2)] opacity-80 scale-95 transition-all">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">work</span>
+<span class="font-label-caps text-label-caps font-code text-code text-tertiary">Experience</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant/70 p-2 hover:bg-white/5 hover:text-on-surface transition-colors duration-300">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">terminal</span>
+<span class="font-label-caps text-label-caps">Skills</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant/70 p-2 hover:bg-white/5 hover:text-on-surface transition-colors duration-300">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">code</span>
+<span class="font-label-caps text-label-caps">Projects</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant/70 p-2 hover:bg-white/5 hover:text-on-surface transition-colors duration-300">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">alternate_email</span>
+<span class="font-label-caps text-label-caps">Contact</span>
+</button>
+</nav>
+</body></html>
